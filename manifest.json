@@ -1,0 +1,15 @@
+{
+  "name": "PBD Tracker - Sistem Perekodan Pentaksiran Bilik Darjah",
+  "short_name": "PBD Tracker",
+  "description": "Sistem Perekodan Pentaksiran Bilik Darjah (PBD) yang modular untuk pelbagai subjek sekolah rendah, dengan sinkron Google Sheets.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAF8F4",
+  "theme_color": "#3E6FA6",
+  "lang": "ms-MY",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
