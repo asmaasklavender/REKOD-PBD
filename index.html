@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>PBD Tracker</title>
+  <meta name="description" content="Sistem Perekodan Pentaksiran Bilik Darjah (PBD) - Tajuk, Standard Kandungan, Standard Pembelajaran, TP, Lampiran & Justifikasi, dengan auto-simpan dan sinkron Google Sheets." />
+  <meta name="theme-color" content="#EC7FAE" />
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="PBD Tracker" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <style>
+    html, body, #root { height: 100%; }
+    body { margin: 0; background: #FFF3F8; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" data-type="module" src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js").catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
